@@ -1,0 +1,119 @@
+2013-07-06 17:47:45 Error: [MissingControllerException] Controller class TasksController could not be found.
+Exception Attributes: array (
+  'class' => 'TasksController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/tasks/
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-07-06 18:12:52 Error: [MissingViewException] View file "E:\ProgramFiles\xampp\htdocs\cakephp\app\View\Tasks\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\ProgramFiles\\xampp\\htdocs\\cakephp\\app\\View\\Tasks\\index.ctp',
+)
+Request URL: /cakephp/tasks/
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\View\View.php(468): View->_getViewFileName('index')
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(948): View->render('index', NULL)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\TasksController.php(12): Controller->render('index')
+#3 [internal function]: TasksController->index()
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest), Object(CakeResponse))
+#7 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-07-06 18:13:07 Error: [MissingViewException] View file "E:\ProgramFiles\xampp\htdocs\cakephp\app\View\Tasks\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\ProgramFiles\\xampp\\htdocs\\cakephp\\app\\View\\Tasks\\index.ctp',
+)
+Request URL: /cakephp/tasks/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\View\View.php(468): View->_getViewFileName('index')
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(948): View->render('index', NULL)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\TasksController.php(12): Controller->render('index')
+#3 [internal function]: TasksController->index()
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest), Object(CakeResponse))
+#7 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-07-06 18:52:41 Error: Fatal Error (4): syntax error, unexpected 'endforeach' (T_ENDFOREACH) in [E:\ProgramFiles\xampp\htdocs\cakephp\app\View\Tasks\index.ctp, line 34]
+2013-07-06 18:52:41 Error: [FatalErrorException] syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+Request URL: /cakephp/tasks/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\ProgramFiles...', 34)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\ProgramFiles...', 34, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\ProgramFiles...', 34, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-06 18:56:38 Error: Fatal Error (4): syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in [E:\ProgramFiles\xampp\htdocs\cakephp\app\View\Tasks\index.ctp, line 29]
+2013-07-06 18:56:38 Error: [FatalErrorException] syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+Request URL: /cakephp/tasks/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\ProgramFiles...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\ProgramFiles...', 29, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\ProgramFiles...', 29, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-06 19:07:34 Error: Fatal Error (1): Call to undefined method SessionComponent::setFlush() in [E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\TasksController.php, line 30]
+2013-07-06 19:07:34 Error: [InternalErrorException] Internal Server Error
+Request URL: /cakephp/Tasks/done/1
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\ProgramFiles...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\ProgramFiles...', 30, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\ProgramFiles...', 30, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-06 19:08:02 Error: Fatal Error (1): Call to undefined method SessionComponent::setFlush() in [E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\TasksController.php, line 30]
+2013-07-06 19:08:02 Error: [InternalErrorException] Internal Server Error
+Request URL: /cakephp/Tasks/done/2
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\ProgramFiles...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\ProgramFiles...', 30, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\ProgramFiles...', 30, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-06 19:08:38 Error: Fatal Error (1): Call to undefined method SessionComponent::setFlush() in [E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\TasksController.php, line 30]
+2013-07-06 19:08:38 Error: [InternalErrorException] Internal Server Error
+Request URL: /cakephp/Tasks/done/1
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\ProgramFiles...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\ProgramFiles...', 30, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\ProgramFiles...', 30, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-06 19:42:54 Error: Fatal Error (4): syntax error, unexpected 'method' (T_STRING) in [E:\ProgramFiles\xampp\htdocs\cakephp\app\View\Tasks\create.ctp, line 2]
+2013-07-06 19:42:54 Error: [InternalErrorException] Internal Server Error
+Request URL: /cakephp/Tasks/create
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\ProgramFiles...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\ProgramFiles...', 2, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\ProgramFiles...', 2, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-06 19:44:58 Error: Fatal Error (4): syntax error, unexpected 'method' (T_STRING) in [E:\ProgramFiles\xampp\htdocs\cakephp\app\View\Tasks\create.ctp, line 2]
+2013-07-06 19:44:58 Error: [InternalErrorException] Internal Server Error
+Request URL: /cakephp/Tasks/create
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\ProgramFiles...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\ProgramFiles...', 2, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\ProgramFiles...', 2, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-06 19:45:43 Error: Fatal Error (4): syntax error, unexpected 'method' (T_STRING) in [E:\ProgramFiles\xampp\htdocs\cakephp\app\View\Tasks\create.ctp, line 2]
+2013-07-06 19:45:43 Error: [FatalErrorException] syntax error, unexpected 'method' (T_STRING)
+Request URL: /cakephp/Tasks/create
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\ProgramFiles...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\ProgramFiles...', 2, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\ProgramFiles...', 2, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

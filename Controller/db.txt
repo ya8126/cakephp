@@ -1,0 +1,14 @@
+
+create table tasks (
+	id int(11) not null auto_increment,
+	name tinytext not null,
+	body text not null,
+	created datetime not null,
+	modified datetime not null,
+	primary key (id)
+) engine=MyISAM;
+
+alter table tasks 
+	add status int not null default 0 after body,
+	add due_date date null default null after status;
+	
