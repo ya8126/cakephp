@@ -4,6 +4,13 @@
 ?>
 
 <h3><?php echo count($tasks_data);?>件のタスクが未完了です</h3>
+<?php
+	foreach ($tasks_data as $row):
+		echo $this->element('task', array('task' => $row));
+	endforeach;
+?>
+
+<!--
 <table>
 	<tr>
 		<th>ID</th>
@@ -21,7 +28,13 @@
 			echo $this->Html->link($row['Task']['id'], '/Tasks/view/'.$row['Task']['id']);
 		?>
 		</td>
-		<td><?php echo h($row['Task']['name']); ?></td>
+		<td><?php echo h($row['Task']['name']); ?><br/>
+			<ul>
+				<?php foreach ($row['Note'] as $note): ?>
+					<li><?php echo h($note['body']);?></li>
+				<?php endforeach; ?>
+			</ul>
+		</td>
 		<td><?php echo h($row['Task']['due_date']); ?></td>
 		<td><?php echo h($row['Task']['created']); ?></td>
 		<td>
@@ -34,4 +47,4 @@
 	endforeach;
 ?>
 </table>
-
+-->
