@@ -4,22 +4,44 @@ class TasksController extends AppController{
 	
 	public $scaffold;
 	
-	public function index(){
-/*		//空のデータをビューへ渡す
-		$tasks_data = array();
+	public $components = array('Name');
+	
+	public $paginate = array(
+		'limit' => 3,
+		'order' => array(
+			'Task.id' => 'DESC'
+		)
+	);
+	
+	public function all(){
+		//データをモデルから取得してビューへ渡す
+		$tasks_data = $this->paginate('Task', array(
+			'Task.id >' => 0
+		));
 		$this->set('tasks_data', $tasks_data);
-*/
+		
+		//app/view/Tasks/all.ctpを表示
+		$this->render('all');
+	}
+	
+	public function index(){
+		/*		//空のデータをビューへ渡す
+			$tasks_data = array();
+		$this->set('tasks_data', $tasks_data);
+		*/
 		//データをモデルから取得してビューへ渡す
 		$options = array(
-			'conditions' => array(
-				'status' => 0
-			)
+				'conditions' => array(
+						'status' => 0
+				)
 		);
-		
+	
 		$tasks_data = $this->Task->find('all', $options);
 		$this->set('tasks_data', $tasks_data);
-		
+	
 		//app/view/Tasks/index.ctpを表示
+		$msg = $this->Name->name('aaa');
+		$this->Session->setFlash($msg);
 		$this->render('index');
 	}
 	

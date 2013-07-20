@@ -1,17 +1,22 @@
-<!-- app/View/Tasks/index.ctp -->
+<!-- app/View/Tasks/all.ctp -->
 <?php
 	echo $this->Html->Link('新規タスク', '/Tasks/create');
-	echo ' ';
-	echo $this->Html->Link('全タスク', '/Tasks/all');
-	echo ' ';
-	echo $this->Html->Link('ログアウト', '/Users/logout');?>
+	echo "<br>";	
+	echo $this->Html->Link('ログアウト', '/Users/logout');
+	echo "<br>";
+?>
 
-<h3><?php echo count($tasks_data);?>件のタスクが未完了です</h3>
+<h3>全部で<?php echo count($tasks_data);?>件のタスクがあります</h3>
 <?php
 	foreach ($tasks_data as $row):
 		echo $this->element('task', array('task' => $row));
 	endforeach;
 ?>
+
+<?php echo $this->Paginator->counter(); ?><br>
+<?php echo $this->Paginator->prev('prev'); ?> 
+<?php echo $this->Paginator->numbers(); ?> 
+<?php echo $this->Paginator->next('next'); ?><br>
 
 <!--
 <table>
@@ -40,11 +45,7 @@
 		</td>
 		<td><?php echo h($row['Task']['due_date']); ?></td>
 		<td><?php echo h($row['Task']['created']); ?></td>
-		<td>
-		<?php
-			echo $this->Html->link('このタスクを完了する', '/Tasks/done/'.$row['Task']['id']);
-		?>
-		</td>
+		<td><?php echo h($row['Task']['modified']); ?></td>
 	</tr>
 <?php
 	endforeach;

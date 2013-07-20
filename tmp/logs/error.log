@@ -143,3 +143,296 @@ Stack Trace:
 #10 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest), Object(CakeResponse))
 #11 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2013-07-20 17:53:20 Error: [MissingViewException] View file "E:\ProgramFiles\xampp\htdocs\cakephp\app\View\Users\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\ProgramFiles\\xampp\\htdocs\\cakephp\\app\\View\\Users\\login.ctp',
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-07-20 18:53:21 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\AppController.php, line 52]
+2013-07-20 18:53:21 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /cakephp/users/create
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\ProgramFiles...', 52)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\ProgramFiles...', 52, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\ProgramFiles...', 52, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-20 18:55:14 Error: Fatal Error (1): Call to a member function passwords() on a non-object in [E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\UsersController.php, line 32]
+2013-07-20 18:55:14 Error: [FatalErrorException] Call to a member function passwords() on a non-object
+Request URL: /cakephp/Users/create
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\ProgramFiles...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\ProgramFiles...', 32, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\ProgramFiles...', 32, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-20 18:56:02 Error: Fatal Error (1): Call to a member function passwords() on a non-object in [E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\UsersController.php, line 32]
+2013-07-20 18:56:02 Error: [FatalErrorException] Call to a member function passwords() on a non-object
+Request URL: /cakephp/Users/create
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\ProgramFiles...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\ProgramFiles...', 32, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\ProgramFiles...', 32, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-20 18:56:12 Error: Fatal Error (1): Call to a member function passwords() on a non-object in [E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\UsersController.php, line 32]
+2013-07-20 18:56:12 Error: [FatalErrorException] Call to a member function passwords() on a non-object
+Request URL: /cakephp/Users/create
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\ProgramFiles...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\ProgramFiles...', 32, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\ProgramFiles...', 32, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-20 18:56:16 Error: Fatal Error (1): Call to a member function passwords() on a non-object in [E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\UsersController.php, line 32]
+2013-07-20 18:56:16 Error: [FatalErrorException] Call to a member function passwords() on a non-object
+Request URL: /cakephp/Users/create
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\ProgramFiles...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\ProgramFiles...', 32, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\ProgramFiles...', 32, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-20 18:58:58 Error: Fatal Error (1): Call to a member function password() on a non-object in [E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\UsersController.php, line 32]
+2013-07-20 18:58:58 Error: [FatalErrorException] Call to a member function password() on a non-object
+Request URL: /cakephp/Users/create
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\ProgramFiles...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\ProgramFiles...', 32, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\ProgramFiles...', 32, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-07-20 19:28:14 Error: [MissingActionException] Action Users::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'users',
+)
+Request URL: /cakephp/users/users/create
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(531): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): Controller->_getScaffold(Object(CakeRequest))
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-07-20 19:28:51 Error: [MissingActionException] Action Users::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'users',
+)
+Request URL: /cakephp/users/users/create
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(531): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): Controller->_getScaffold(Object(CakeRequest))
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-07-20 19:30:08 Error: [MissingActionException] Action Users::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'users',
+)
+Request URL: /cakephp/users/users/create
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(531): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): Controller->_getScaffold(Object(CakeRequest))
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-07-20 19:32:16 Error: [MissingActionException] Action Users::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'users',
+)
+Request URL: /cakephp/users/users/create
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(531): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): Controller->_getScaffold(Object(CakeRequest))
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-07-20 19:32:40 Error: [MissingActionException] Action Users::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'users',
+)
+Request URL: /cakephp/users/users/create
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(531): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): Controller->_getScaffold(Object(CakeRequest))
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-07-20 19:33:26 Error: [MissingActionException] Action Users::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'users',
+)
+Request URL: /cakephp/users/users/create
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(531): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): Controller->_getScaffold(Object(CakeRequest))
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-07-20 19:34:56 Error: [MissingActionException] Action Users::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'users',
+)
+Request URL: /cakephp/users/users/create
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(531): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): Controller->_getScaffold(Object(CakeRequest))
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-07-20 19:35:08 Error: [MissingActionException] Action Users::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'users',
+)
+Request URL: /cakephp/users/users/create
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(531): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): Controller->_getScaffold(Object(CakeRequest))
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-07-20 19:35:13 Error: [MissingControllerException] Controller class UsersControllerController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersControllerController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/UsersController/create
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-07-20 19:35:58 Error: [MissingActionException] Action Users::Users() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'Users',
+)
+Request URL: /cakephp/users/Users/create
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(531): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): Controller->_getScaffold(Object(CakeRequest))
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-07-20 19:36:18 Error: [MissingActionException] Action Users::Users() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'Users',
+)
+Request URL: /cakephp/users/Users/create
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(531): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): Controller->_getScaffold(Object(CakeRequest))
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-07-20 20:05:24 Error: [MissingViewException] View file "E:\ProgramFiles\xampp\htdocs\cakephp\app\View\Tasks\all_list.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\ProgramFiles\\xampp\\htdocs\\cakephp\\app\\View\\Tasks\\all_list.ctp',
+)
+Request URL: /cakephp/tasks/allList
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-07-20 20:11:20 Error: [MissingViewException] View file "E:\ProgramFiles\xampp\htdocs\cakephp\app\View\Tasks\all_list.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\ProgramFiles\\xampp\\htdocs\\cakephp\\app\\View\\Tasks\\all_list.ctp',
+)
+Request URL: /cakephp/tasks/allList
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\View\View.php(468): View->_getViewFileName('allList')
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(948): View->render('allList', NULL)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\TasksController.php(22): Controller->render('allList')
+#3 [internal function]: TasksController->alllist()
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest), Object(CakeResponse))
+#7 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-07-20 20:11:35 Error: [MissingViewException] View file "E:\ProgramFiles\xampp\htdocs\cakephp\app\View\Tasks\all_list.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\ProgramFiles\\xampp\\htdocs\\cakephp\\app\\View\\Tasks\\all_list.ctp',
+)
+Request URL: /cakephp/tasks/alllist
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\View\View.php(468): View->_getViewFileName('allList')
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(948): View->render('allList', NULL)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\TasksController.php(22): Controller->render('allList')
+#3 [internal function]: TasksController->alllist()
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest), Object(CakeResponse))
+#7 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-07-20 20:13:03 Error: [MissingViewException] View file "E:\ProgramFiles\xampp\htdocs\cakephp\app\View\Tasks\all_list.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\ProgramFiles\\xampp\\htdocs\\cakephp\\app\\View\\Tasks\\all_list.ctp',
+)
+Request URL: /cakephp/tasks/alllist
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\View\View.php(468): View->_getViewFileName('allList')
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(948): View->render('allList', NULL)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\TasksController.php(22): Controller->render('allList')
+#3 [internal function]: TasksController->alllist()
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest), Object(CakeResponse))
+#7 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-07-20 20:13:10 Error: [MissingViewException] View file "E:\ProgramFiles\xampp\htdocs\cakephp\app\View\Tasks\all_list.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\ProgramFiles\\xampp\\htdocs\\cakephp\\app\\View\\Tasks\\all_list.ctp',
+)
+Request URL: /cakephp/tasks/alllist
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\View\View.php(468): View->_getViewFileName('allList')
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(948): View->render('allList', NULL)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\TasksController.php(22): Controller->render('allList')
+#3 [internal function]: TasksController->alllist()
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest), Object(CakeResponse))
+#7 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
