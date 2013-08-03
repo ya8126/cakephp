@@ -1,10 +1,15 @@
 <?php
 // app/controller/TasksController.php
+
+App::uses('CakeEmail', 'Network/Email');
+
 class TasksController extends AppController{
 	
 	public $scaffold;
 	
 	public $components = array('Name');
+	
+	public $helper = array('Title');
 	
 	public $paginate = array(
 		'limit' => 3,
@@ -35,12 +40,14 @@ class TasksController extends AppController{
 						'status' => 0
 				)
 		);
-	
-		$tasks_data = $this->Task->find('all', $options);
+//		$tasks_data = $this->Task->find('all', $options);
+		//name順にしてみた  読み込まれたデータは['Task']['フィールド名']の連想配列になる
+		$tasks_data = Hash::sort($this->Task->find('all', $options),'{n}.Task.name', 'asc');
 		$this->set('tasks_data', $tasks_data);
-	
+		
 		//app/view/Tasks/index.ctpを表示
-		$msg = $this->Name->name('aaa');
+//		$msg = $this->Name->name($this->Auth->user('username'));
+		$msg = $this->Name->name($this);
 		$this->Session->setFlash($msg);
 		$this->render('index');
 	}
@@ -51,11 +58,43 @@ class TasksController extends AppController{
 		$this->Task->id = $id;
 		$this->Task->saveField('status', 1);
 		$msg = sprintf('タスク%sを完了しました', $id);
+		//メールを送る
+		$this->Task->contain();
+		$task_data = $this->Task->find('first', 
+				array('conditions' => array('id' => $id)
+				)
+		);
+		$this->mailer($msg, $task_data['Task']['name'] . ' 完了');
 		//メッセージを表示してリダイレクト
 //		$this->flash($msg, '/Tasks/index');
 		$this->Session->setFlash($msg);
 		$this->redirect('/Tasks/index');
+
 		return;
+	}
+	
+	public function mailer($subject, $msg){
+/*	mail関数を使った場合
+		$email = new CakeEmail();
+		
+		$email->transport('Mail');
+*/
+//	SMTPサーバを使った場合
+		$email = new CakeEmail(array(
+			'tranceport' => 'Smtp',
+			'host' => 'ssl://smtp.gmail.com',
+			'port' => 465,
+			'timeout' => 30,
+			'username' => 'pgacademy.user@gmail.com',
+			'password' => '1tacade3'
+		));
+//		ここから共通
+		$email->from('pgacademy.user@gmail.com');
+		$email->to('tonya.8839@gmail.com');
+		$email->subject($subject);
+		$messages = $email->send($msg);
+		
+		$this->set('messages', $messages);
 	}
 	
 	public function create(){
@@ -76,6 +115,8 @@ class TasksController extends AppController{
 			return;
 		}
 		$msg = sprintf('タスク%sを登録しました', $this->Task->id);
+		//メールを送る
+		$this->mailer($msg, $this->request->data['name'] . ' 登録');
 		//メッセージを表示してリダイレクト
 		$this->Session->setFlash($msg);
 		$this->redirect('/Tasks/index');

@@ -1,5 +1,8 @@
 <!-- app/View/Tasks/index.ctp -->
+
 <?php
+//	debug($messages);
+	echo $this->Title->tasktitle() . '<br>' ;
 	echo $this->Html->Link('新規タスク', '/Tasks/create');
 	echo ' ';
 	echo $this->Html->Link('全タスク', '/Tasks/all');

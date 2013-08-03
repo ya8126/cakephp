@@ -1,9 +1,12 @@
 <?php
 //app/Model/Task.php
 class Task extends AppModel{
-
+	//関連
 	public $hasMany = array('Note');
 	
+	//ビヘイビア
+	public $actsAs = array('Containable');
+	//バリデート
 	public $validate = array(
 			'name' => array(
 				'rule' => array('maxLength', 60),

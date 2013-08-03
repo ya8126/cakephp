@@ -1,5 +1,6 @@
 <!-- app/View/Tasks/all.ctp -->
 <?php
+	echo $this->Title->tasktitle() . '<br>' ;
 	echo $this->Html->Link('新規タスク', '/Tasks/create');
 	echo "<br>";	
 	echo $this->Html->Link('ログアウト', '/Users/logout');

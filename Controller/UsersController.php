@@ -4,6 +4,8 @@ class UsersController extends AppController{
 	
 	public $scaffold;
 	
+	public $helper = array('Title');
+	
 	public function login(){
 		if ($this->request->is('post')){
 			if ($this->Auth->login()){

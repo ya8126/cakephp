@@ -1,4 +1,7 @@
 <!-- app/View/Users/create.ctp -->
+<?php 
+	echo $this->Title->tasktitle() . '<br>' ;
+?>
 <form action="<?php echo $this->Html->url("/Users/create"); ?>" method="POST">
 	<?php echo $this->Form->error('User.username');?>
 	<?php echo $this->Form->error('User.password');?>	

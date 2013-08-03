@@ -436,3 +436,64 @@ Stack Trace:
 #6 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest), Object(CakeResponse))
 #7 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2013-08-03 18:03:38 Error: Fatal Error (1): Call to a member function user() on a non-object in [E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\Component\NameComponent.php, line 8]
+2013-08-03 18:03:38 Error: [FatalErrorException] Call to a member function user() on a non-object
+Request URL: /cakephp/tasks/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\ProgramFiles...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\ProgramFiles...', 8, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\ProgramFiles...', 8, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-03 18:22:19 Error: [MissingHelperException] Helper class TitleHelper could not be found.
+Exception Attributes: array (
+  'class' => 'TitleHelper',
+  'plugin' => false,
+)
+Request URL: /cakephp/Tasks/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Title')
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\View\View.php(835): HelperCollection->__isset('Title')
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\app\View\Tasks\index.ctp(4): View->__get('Title')
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\View\View.php(947): include('E:\ProgramFiles...')
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\View\View.php(909): View->_evaluate('E:\ProgramFiles...', Array)
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\View\View.php(471): View->_render('E:\ProgramFiles...')
+#6 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(948): View->render('index', NULL)
+#7 E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\TasksController.php(48): Controller->render('index')
+#8 [internal function]: TasksController->index()
+#9 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#10 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest), Object(CakeResponse))
+#12 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-08-03 19:23:41 Error: Fatal Error (4): syntax error, unexpected '}' in [E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\TasksController.php, line 77]
+2013-08-03 19:23:41 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /cakephp/Tasks/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\ProgramFiles...', 77)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\ProgramFiles...', 77, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\ProgramFiles...', 77, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-03 19:24:07 Error: Fatal Error (1): Call to undefined function mailer() in [E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\TasksController.php, line 40]
+2013-08-03 19:24:07 Error: [FatalErrorException] Call to undefined function mailer()
+Request URL: /cakephp/Tasks/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\ProgramFiles...', 40)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\ProgramFiles...', 40, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\ProgramFiles...', 40, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-03 19:24:54 Error: Fatal Error (1): Class 'CakeEmail' not found in [E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\TasksController.php, line 67]
+2013-08-03 19:24:54 Error: [FatalErrorException] Class 'CakeEmail' not found
+Request URL: /cakephp/Tasks/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'CakeEmai...', 'E:\ProgramFiles...', 67)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'CakeEmai...', 'E:\ProgramFiles...', 67, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Class 'CakeEmai...', 'E:\ProgramFiles...', 67, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
