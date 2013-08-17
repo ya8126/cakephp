@@ -2,13 +2,14 @@
 
 <?php
 //	debug($messages);
-	echo $this->Title->tasktitle() . '<br>' ;
-	echo $this->Html->Link('新規タスク', '/Tasks/create');
-	echo ' ';
-	echo $this->Html->Link('全タスク', '/Tasks/all');
-	echo ' ';
-	echo $this->Html->Link('ログアウト', '/Users/logout');?>
-
+	echo "<p>";
+	echo $this->Title->tasktitle() . ' ';
+	echo $this->Html->Link("全タスク", "/Tasks/all"). " ";
+	echo $this->Html->Link("新規タスク", "/Tasks/create"). " ";
+	echo $this->Html->Link("ログアウト", "/Users/logout"). "<br>";
+	echo $this->Title->username();
+	echo "</p>";
+?>	
 <h3><?php echo count($tasks_data);?>件のタスクが未完了です</h3>
 <?php
 	foreach ($tasks_data as $row):

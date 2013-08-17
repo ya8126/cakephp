@@ -30,6 +30,7 @@ class TasksController extends AppController{
 	}
 	
 	public function index(){
+
 		/*		//空のデータをビューへ渡す
 			$tasks_data = array();
 		$this->set('tasks_data', $tasks_data);
@@ -47,8 +48,8 @@ class TasksController extends AppController{
 		
 		//app/view/Tasks/index.ctpを表示
 //		$msg = $this->Name->name($this->Auth->user('username'));
-		$msg = $this->Name->name($this);
-		$this->Session->setFlash($msg);
+//		$msg = $this->name->name($this);
+//		$this->Session->setFlash($msg);
 		$this->render('index');
 	}
 	
@@ -57,15 +58,16 @@ class TasksController extends AppController{
 		$id = $this->request->pass[0];
 		$this->Task->id = $id;
 		$this->Task->saveField('status', 1);
-		$msg = sprintf('タスク%sを完了しました', $id);
 		//メールを送る
 		$this->Task->contain();
 		$task_data = $this->Task->find('first', 
 				array('conditions' => array('id' => $id)
 				)
 		);
-		$this->mailer($msg, $task_data['Task']['name'] . ' 完了');
+		$proc ='完了';
+		$this->mailer($task_data['Task'], $proc);
 		//メッセージを表示してリダイレクト
+		$msg = sprintf('タスク%sを%sしました', $id, $proc);
 //		$this->flash($msg, '/Tasks/index');
 		$this->Session->setFlash($msg);
 		$this->redirect('/Tasks/index');
@@ -73,7 +75,7 @@ class TasksController extends AppController{
 		return;
 	}
 	
-	public function mailer($subject, $msg){
+	public function mailer($task, $proc){
 /*	mail関数を使った場合
 		$email = new CakeEmail();
 		
@@ -89,10 +91,22 @@ class TasksController extends AppController{
 			'password' => '1tacade3'
 		));
 //		ここから共通
+		$subject = sprintf("タスク%sを%sしました", $task['id'], $proc);
 		$email->from('pgacademy.user@gmail.com');
 		$email->to('tonya.8839@gmail.com');
 		$email->subject($subject);
-		$messages = $email->send($msg);
+		
+//	templateを使う
+		$email->template('task_mail', 'tasks_layout');
+		$email->emailFormat('html');
+		$email->viewVars(array(
+				'user' => AuthComponent::user('username'),
+				'name' => $task['name'],
+				'body' => $task['body'],
+				'proc' => $proc
+		));
+
+		$messages = $email->send();
 		
 		$this->set('messages', $messages);
 	}
@@ -109,15 +123,17 @@ class TasksController extends AppController{
 				'body' => $this->request->data['body']
 		);
 		//データ登録
-		$id= $this->Task->save($data);
+		$id = $this->Task->save($data);
 		if($id === false){
 			$this->render('create');
 			return;
 		}
-		$msg = sprintf('タスク%sを登録しました', $this->Task->id);
 		//メールを送る
-		$this->mailer($msg, $this->request->data['name'] . ' 登録');
+		$data['id'] = $this->Task->id;
+		$proc = '登録';
+		$this->mailer($data, $proc);
 		//メッセージを表示してリダイレクト
+		$msg = sprintf('タスク%sを%sしました', $this->Task->id, $proc);
 		$this->Session->setFlash($msg);
 		$this->redirect('/Tasks/index');
 	}
@@ -147,7 +163,12 @@ class TasksController extends AppController{
 				'body' => $this->request->data['Task']['body']
 			);
 			if ($this->Task->save($data)){
-				$this->Session->setFlash('更新しました');
+				//メールを送る
+				$proc = '変更';
+				$this->mailer($data, $proc);
+				
+				$msg = sprintf('タスク%sを%sしました', $id, $proc);			
+				$this->Session->setFlash($msg);
 				$this->redirect('/Tasks/index');				
 			}
 		}else{

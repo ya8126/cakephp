@@ -1,10 +1,12 @@
 <!-- app/View/Tasks/all.ctp -->
 <?php
-	echo $this->Title->tasktitle() . '<br>' ;
-	echo $this->Html->Link('新規タスク', '/Tasks/create');
-	echo "<br>";	
-	echo $this->Html->Link('ログアウト', '/Users/logout');
-	echo "<br>";
+	echo "<p>";
+	echo $this->Title->tasktitle() . ' ' ;
+	echo $this->Html->Link('未完了タスク', '/Tasks/index'). " ";
+	echo $this->Html->Link("新規タスク", "/Tasks/create"). " ";
+	echo $this->Html->Link("ログアウト", "/Users/logout"). "<br>";
+	echo $this->Title->username();
+	echo "</p>";
 ?>
 
 <h3>全部で<?php echo count($tasks_data);?>件のタスクがあります</h3>

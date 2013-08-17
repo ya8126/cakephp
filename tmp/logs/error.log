@@ -497,3 +497,53 @@ Stack Trace:
 #3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-08-17 19:10:03 Error: Fatal Error (1): Call to a member function Link() on a non-object in [E:\ProgramFiles\xampp\htdocs\cakephp\app\View\Helper\TitleHelper.php, line 17]
+2013-08-17 19:10:03 Error: [FatalErrorException] Call to a member function Link() on a non-object
+Request URL: /cakephp/Tasks/edit/2
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\ProgramFiles...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\ProgramFiles...', 17, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\ProgramFiles...', 17, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-17 19:12:31 Error: Fatal Error (1): Call to a member function Link() on a non-object in [E:\ProgramFiles\xampp\htdocs\cakephp\app\View\Helper\TitleHelper.php, line 21]
+2013-08-17 19:12:31 Error: [FatalErrorException] Call to a member function Link() on a non-object
+Request URL: /cakephp/tasks/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\ProgramFiles...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\ProgramFiles...', 21, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\ProgramFiles...', 21, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-17 19:17:30 Error: Fatal Error (1): Call to a member function Link() on a non-object in [E:\ProgramFiles\xampp\htdocs\cakephp\app\View\Helper\TitleHelper.php, line 21]
+2013-08-17 19:17:30 Error: [FatalErrorException] Call to a member function Link() on a non-object
+Request URL: /cakephp/tasks/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\ProgramFiles...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\ProgramFiles...', 21, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\ProgramFiles...', 21, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-17 19:21:03 Error: Fatal Error (1): Call to a member function Link() on a non-object in [E:\ProgramFiles\xampp\htdocs\cakephp\app\View\Helper\TitleHelper.php, line 25]
+2013-08-17 19:21:03 Error: [FatalErrorException] Call to a member function Link() on a non-object
+Request URL: /cakephp/tasks/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\ProgramFiles...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\ProgramFiles...', 25, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\ProgramFiles...', 25, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-17 19:22:17 Error: Fatal Error (1): Call to a member function Link() on a non-object in [E:\ProgramFiles\xampp\htdocs\cakephp\app\View\Helper\TitleHelper.php, line 25]
+2013-08-17 19:22:17 Error: [FatalErrorException] Call to a member function Link() on a non-object
+Request URL: /cakephp/tasks/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\ProgramFiles...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\ProgramFiles...', 25, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\ProgramFiles...', 25, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
