@@ -2,7 +2,7 @@
 //app/Model/Task.php
 class Task extends AppModel{
 	//関連
-	public $hasMany = array('Note');
+//	public $hasMany = array('Note');
 	
 	//ビヘイビア
 	public $actsAs = array('Containable');
@@ -21,4 +21,13 @@ class Task extends AppModel{
 				'message' => '詳細を入力してください'
 			)
 	);
+	
+	public function getLatest(){
+		$options = array(
+				'conditions' => array('status' => 0),
+				'order' => array('created desc'),
+				'limit' => 3
+		);
+		return $this->find('all', $options);
+	}
 }
