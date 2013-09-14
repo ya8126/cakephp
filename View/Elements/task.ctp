@@ -16,8 +16,7 @@
 			<?php endforeach; ?>
 			<li><?php echo $this->Html->link('コメントを追加', '/Notes/create');?></li>
 		</ul>
-	</p>
-	
+	</p>	
 	<?php echo $this->Html->link('編集', '/Tasks/edit/'.$task['Task']['id'], array('class' => 'button left'));?>
 	<?php echo $this->Html->link('このタスクを完了する', '/Tasks/done/'.$task['Task']['id'], array('class' => 'button right'));?>
 </div>

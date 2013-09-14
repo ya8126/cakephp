@@ -2,7 +2,7 @@
 // app/controller/TasksController.php
 
 App::uses('CakeEmail', 'Network/Email');
-
+App::uses('AppController', 'Controller');
 class TasksController extends AppController{
 	
 	public $scaffold;
@@ -151,6 +151,7 @@ class TasksController extends AppController{
 		
 		//データが見つからない場合は一覧へ
 		if ($task == false){
+//			throw new NotFoundException(__('Invalid task'));		
 			$this->Session->setFlash('タスクが見つかりません');
 			$this->redirect('/Tasks/index');
 		}

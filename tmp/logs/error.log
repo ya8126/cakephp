@@ -51,3 +51,77 @@ Stack Trace:
 #4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest), Object(CakeResponse))
 #5 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2013-09-14 17:36:45 Error: Fatal Error (64): Cannot redeclare TaskFixture::$import in [E:\ProgramFiles\xampp\htdocs\cakephp\app\Test\Fixture\TaskFixture.php, line 6]
+2013-09-14 17:36:45 Error: [FatalErrorException] Cannot redeclare TaskFixture::$import
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'E:\ProgramFiles...', 6)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'E:\ProgramFiles...', 6, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'E:\ProgramFiles...', 6, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-14 17:37:12 Error: Fatal Error (64): Cannot redeclare TaskFixture::$import in [E:\ProgramFiles\xampp\htdocs\cakephp\app\Test\Fixture\TaskFixture.php, line 6]
+2013-09-14 17:37:12 Error: [FatalErrorException] Cannot redeclare TaskFixture::$import
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'E:\ProgramFiles...', 6)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'E:\ProgramFiles...', 6, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'E:\ProgramFiles...', 6, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-14 17:39:56 Error: Fatal Error (64): Cannot redeclare TaskFixture::$import in [E:\ProgramFiles\xampp\htdocs\cakephp\app\Test\Fixture\TaskFixture.php, line 6]
+2013-09-14 17:39:56 Error: [FatalErrorException] Cannot redeclare TaskFixture::$import
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'E:\ProgramFiles...', 6)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'E:\ProgramFiles...', 6, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'E:\ProgramFiles...', 6, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-14 17:44:01 Error: Fatal Error (64): Cannot redeclare TaskFixture::$import in [E:\ProgramFiles\xampp\htdocs\cakephp\app\Test\Fixture\TaskFixture.php, line 6]
+2013-09-14 17:44:01 Error: [FatalErrorException] Cannot redeclare TaskFixture::$import
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'E:\ProgramFiles...', 6)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'E:\ProgramFiles...', 6, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'E:\ProgramFiles...', 6, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-14 17:49:44 Error: [UnexpectedValueException] Referenced fixture class Note (Test\Fixture\NoteFixture.php) not found
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(79): CakeFixtureManager->_loadFixtures(Array)
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\TestSuite\CakeTestRunner.php(58): CakeFixtureManager->fixturize(Object(TaskTest))
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\TestSuite\CakeTestSuiteCommand.php(115): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(247): CakeTestSuiteCommand->run(Array)
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(100): CakeTestSuiteDispatcher->_runTestCase()
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(117): CakeTestSuiteDispatcher->dispatch()
+#6 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\test.php(100): CakeTestSuiteDispatcher::run()
+#7 {main}
+2013-09-14 17:51:55 Error: Fatal Error (64): Cannot redeclare class TaskFixture in [E:\ProgramFiles\xampp\htdocs\cakephp\app\Test\Fixture\NoteFixture.php, line 6]
+2013-09-14 17:51:55 Error: [FatalErrorException] Cannot redeclare class TaskFixture
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'E:\ProgramFiles...', 6)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'E:\ProgramFiles...', 6, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'E:\ProgramFiles...', 6, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-14 17:52:26 Error: Fatal Error (64): Cannot redeclare class TaskFixture in [E:\ProgramFiles\xampp\htdocs\cakephp\app\Test\Fixture\NoteFixture.php, line 6]
+2013-09-14 17:52:26 Error: [FatalErrorException] Cannot redeclare class TaskFixture
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'E:\ProgramFiles...', 6)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'E:\ProgramFiles...', 6, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'E:\ProgramFiles...', 6, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-14 18:22:49 Error: Fatal Error (1): Class 'AppController' not found in [E:\ProgramFiles\xampp\htdocs\cakephp\app\Controller\TasksController.php, line 6]
+2013-09-14 18:22:49 Error: [FatalErrorException] Class 'AppController' not found
+Request URL: /cakephp/tasks/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'AppContr...', 'E:\ProgramFiles...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppContr...', 'E:\ProgramFiles...', 6, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Class 'AppContr...', 'E:\ProgramFiles...', 6, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

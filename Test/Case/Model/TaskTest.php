@@ -2,19 +2,21 @@
 //app/Test/Case/Model/TaskTest.php
 
 App::uses('Task', 'Model');
+
 class TaskTest extends CakeTestCase{
 	public $fixtures = array(
-			'app.task'//,
-//			'app.note'
+			'app.task',
+			'app.note'
 			);
 		
 	public function setUp() {
 		parent::setUp();
 		$this->Task = ClassRegistry::init('Task');
-	}
+		$this->Note = ClassRegistry::init('Note');	}
 	
 	public function tearDown(){
 		unset($this->Task);
+		unset($this->Note);
 		parent::tearDown();
 	}
 	

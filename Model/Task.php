@@ -2,7 +2,7 @@
 //app/Model/Task.php
 class Task extends AppModel{
 	//関連
-//	public $hasMany = array('Note');
+	public $hasMany = array('Note');
 	
 	//ビヘイビア
 	public $actsAs = array('Containable');
