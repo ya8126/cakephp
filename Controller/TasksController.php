@@ -19,6 +19,11 @@ class TasksController extends AppController{
 	);
 	
 	public function all(){
+		//SessionIDの変更
+//		App::uses('CakeSession', 'Model/DataSource');	不要でした
+//		CakeSession::start();							不要でした
+//		$this->Session->renew();
+		CakeSession::renew();
 		//データをモデルから取得してビューへ渡す
 		$tasks_data = $this->paginate('Task', array(
 			'Task.id >' => 0

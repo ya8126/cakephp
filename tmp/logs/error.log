@@ -249,3 +249,110 @@ Stack Trace:
 #7 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(CsrfController), Object(CakeRequest), Object(CakeResponse))
 #8 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #9 {main}
+2013-10-05 18:28:29 Error: [PrivateActionException] Private Action SecurityActionMethodController::_something() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'SecurityActionMethodController',
+  'action' => '_something',
+)
+Request URL: /cakephp/SecurityActionMethod/_something
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SecurityActionMethodController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-05 18:28:42 Error: [MissingActionException] Action SecurityActionMethodController::something() could not be found.
+Exception Attributes: array (
+  'controller' => 'SecurityActionMethodController',
+  'action' => 'something',
+)
+Request URL: /cakephp/SecurityActionMethod/something
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SecurityActionMethodController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-05 18:29:26 Error: [PrivateActionException] Private Action SecurityActionMethodController::something() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'SecurityActionMethodController',
+  'action' => 'something',
+)
+Request URL: /cakephp/SecurityActionMethod/something
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SecurityActionMethodController), Object(CakeRequest), Object(CakeResponse))
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-05 18:54:16 Error: [MissingViewException] View file "E:\ProgramFiles\xampp\htdocs\cakephp\app\View\SecurityData\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\ProgramFiles\\xampp\\htdocs\\cakephp\\app\\View\\SecurityData\\index.ctp',
+)
+Request URL: /cakephp/SecurityData/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SecurityDataController), Object(CakeRequest), Object(CakeResponse))
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-05 19:31:54 Error: [MissingActionException] Action Tasks::SecurityData() could not be found.
+Exception Attributes: array (
+  'controller' => 'Tasks',
+  'action' => 'SecurityData',
+)
+Request URL: /cakephp/Tasks/SecurityData/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(531): Scaffold->__construct(Object(TasksController), Object(CakeRequest))
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): Controller->_getScaffold(Object(CakeRequest))
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-10-05 19:35:50 Error: [MissingControllerException] Controller class CakephpController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/cakephp/SecurityData/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-05 20:03:10 Error: [BadRequestException] The request has been black-holed
+Request URL: /cakephp/SecurityData/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Component\SecurityComponent.php(241): SecurityComponent->blackHole(Object(SecurityDataController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(SecurityDataController))
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#7 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SecurityDataController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-10-05 20:03:11 Error: [BadRequestException] The request has been black-holed
+Request URL: /cakephp/SecurityData/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Component\SecurityComponent.php(241): SecurityComponent->blackHole(Object(SecurityDataController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(SecurityDataController))
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#7 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SecurityDataController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-10-05 20:03:28 Error: [BadRequestException] The request has been black-holed
+Request URL: /cakephp/SecurityData/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Component\SecurityComponent.php(241): SecurityComponent->blackHole(Object(SecurityDataController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(SecurityDataController))
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Event\CakeEventManager.php(248): call_user_func(Array, Object(CakeEvent))
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(184): Controller->startupProcess()
+#7 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(SecurityDataController), Object(CakeRequest), Object(CakeResponse))
+#8 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}

@@ -108,3 +108,27 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+//SessionIDの自動更新（リクエスト１０回毎）
+Configure::write('Session', array(
+	'defaults' => 'php',
+	'autoRegenerate' => true
+));
+//自動更新するリクエスト回数の変更
+App::uses('CakeSession', 'Model/Datasource');
+CakeSession::$requestCountdown = 3;
+
+/*
+ * SessionIDを任意の場所で変更する場合
+ * 
+ * //Sessionコンポーネント利用の場合
+ * App::uses('CakeSession', 'Model/DataSource');//不必要かも
+ * CakeSession::start();						//不必要かも
+ * $this->Session->renew();
+ * 
+ * //CakeSessionクラスの場合
+ * App::uses('CakeSession', 'Model/DataSource');//不必要かも
+ * CakeSession::start();						//不必要かも
+ * CakeSession::renew();
+ */
+
