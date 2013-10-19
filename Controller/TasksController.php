@@ -3,13 +3,16 @@
 
 App::uses('CakeEmail', 'Network/Email');
 App::uses('AppController', 'Controller');
+
 class TasksController extends AppController{
 	
 	public $scaffold;
 	
-	public $components = array('Name');
+	public $components = array('Name', 'Benchmark');
 	
-	public $helper = array('Title');
+	public $helpers = array('Title', 'Cache');
+	
+	public $cacheAction = array('index' => '+1 hour', 'all' => '+1 minute');
 	
 	public $paginate = array(
 		'limit' => 3,
