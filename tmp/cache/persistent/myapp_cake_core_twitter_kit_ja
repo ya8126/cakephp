@@ -1,0 +1,2 @@
+1383387385
+a:1:{s:11:"LC_MESSAGES";a:11:{s:23:"Authorization Error: %s";s:19:"認証エラー: %s";s:22:"Authorization failure.";s:30:"認証に失敗しました。";s:17:"Characters left: ";s:17:"残り文字数: ";s:10:"Loading...";s:18:"読み込み中…";s:5:"Login";s:12:"ログイン";s:13:"Login Twitter";s:30:"ツイッターでログイン";s:6:"Logout";s:15:"ログアウト";s:10:"Signed out";s:27:"ログアウトしました";s:27:"The user could not be saved";s:39:"ユーザの保存に失敗しました";s:5:"Tweet";s:12:"ツイート";s:9:"%plural-c";s:20:"nplurals=1;plural=0;";}}

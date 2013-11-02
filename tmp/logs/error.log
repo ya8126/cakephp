@@ -468,3 +468,107 @@ Stack Trace:
 #4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest), Object(CakeResponse))
 #5 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2013-11-02 18:29:08 Error: [MissingPluginException] Plugin TwitterKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'TwitterKit',
+)
+Request URL: /cakephp/Tasks/twitter_kit/users/login
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(367): CakePlugin::path('TwitterKit')
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(228): App::pluginPath('TwitterKit')
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(545): App::path('Controller/Comp...', 'TwitterKit')
+#3 [internal function]: App::load('TwitterComponen...')
+#4 [internal function]: spl_autoload_call('TwitterComponen...')
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\ComponentCollection.php(100): class_exists('TwitterComponen...')
+#6 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('TwitterKit.Twit...', Array)
+#7 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(639): ComponentCollection->init(Object(TasksController))
+#8 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(183): Controller->constructClasses()
+#9 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest), Object(CakeResponse))
+#10 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-11-02 18:40:56 Error: [MissingActionException] Action Tasks::twitter_kit() could not be found.
+Exception Attributes: array (
+  'controller' => 'Tasks',
+  'action' => 'twitter_kit',
+)
+Request URL: /cakephp/Tasks/twitter_kit/users/login
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(531): Scaffold->__construct(Object(TasksController), Object(CakeRequest))
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): Controller->_getScaffold(Object(CakeRequest))
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-11-02 18:43:35 Error: [MissingActionException] Action Tasks::twitter_kit() could not be found.
+Exception Attributes: array (
+  'controller' => 'Tasks',
+  'action' => 'twitter_kit',
+)
+Request URL: /cakephp/Tasks/twitter_kit/users/login
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(531): Scaffold->__construct(Object(TasksController), Object(CakeRequest))
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): Controller->_getScaffold(Object(CakeRequest))
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest), Object(CakeResponse))
+#5 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-11-02 19:15:57 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-02 19:16:50 Error: Fatal Error (1): Unsupported operand types in [E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\View\Helper\HtmlHelper.php, line 787]
+2013-11-02 19:16:50 Error: [FatalErrorException] Unsupported operand types
+Request URL: /cakephp/timeline
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\ProgramFiles...', 787)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\ProgramFiles...', 787, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\ProgramFiles...', 787, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-02 19:17:33 Error: Fatal Error (1): Unsupported operand types in [E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\View\Helper\HtmlHelper.php, line 787]
+2013-11-02 19:17:33 Error: [FatalErrorException] Unsupported operand types
+Request URL: /cakephp/Timeline
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\ProgramFiles...', 787)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\ProgramFiles...', 787, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\ProgramFiles...', 787, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-02 19:18:03 Error: Fatal Error (1): Unsupported operand types in [E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\View\Helper\HtmlHelper.php, line 787]
+2013-11-02 19:18:03 Error: [FatalErrorException] Unsupported operand types
+Request URL: /cakephp/Timeline/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\ProgramFiles...', 787)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\ProgramFiles...', 787, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\ProgramFiles...', 787, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-02 19:19:56 Error: Fatal Error (1): Unsupported operand types in [E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\View\Helper\HtmlHelper.php, line 787]
+2013-11-02 19:19:56 Error: [FatalErrorException] Unsupported operand types
+Request URL: /cakephp/Timeline/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'E:\ProgramFiles...', 787)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'E:\ProgramFiles...', 787, Array)
+#2 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(927): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'E:\ProgramFiles...', 787, Array)
+#3 E:\ProgramFiles\xampp\htdocs\cakephp\lib\Cake\Core\App.php(900): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-02 20:44:57 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/index
+Stack Trace:
+#0 E:\ProgramFiles\xampp\htdocs\cakephp\app\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

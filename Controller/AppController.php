@@ -32,8 +32,12 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-	public $components=array("DebugKit.Toolbar", "Session"
-			,"Auth" => array(
+	public $components=array(
+			'DebugKit.Toolbar',
+			'Session',
+			'TwitterKit.Twitter',
+/*	自前のログイン画面を使う場合
+			"Auth" => array(
 				'loginAction' => array(
 					'controller' => 'users',
 					'action' => 'login'
@@ -49,6 +53,32 @@ class AppController extends Controller {
 					)
 				)
 				
+			)
+*/
+			// OAuthを使う場合
+			'Auth' => array(
+				//認証設定
+				'authenticate' => array(
+					'all' => array(
+						'fields' => array(
+							'username' => 'username',
+							'password' => 'password'
+						)
+					),
+					'TwitterKit.TwitterOauth'
+				),
+				//ログインURL
+				'loginAction' => array(
+					'plugin' => 'twitter_kit',
+					'controller' => 'users',
+					'action' => 'login'
+				),
+				//ログイン後の遷移先URL
+				'loginRedirect' => array(
+					'plugin' => 'twitter_kit',
+					'controller' => 'users',
+					'action' => 'login'
+				)
 			)
 	);
 }
